@@ -6,6 +6,7 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
 ## 1. Data Download
 
 - Download ImageNet-1K train/val dataset from academic torrents : [train link](https://academictorrents.com/details/a306397ccf9c2ead27155983c254227c0fd938e2), [val link](https://academictorrents.com/details/5d6d0df7ed81efd49ca99ea4737e0ae5e3a5f2e5)
+- Check-out my velog post for download on linux server : [link](https://velog.io/@jasonlee1995/Linux-Server-Download-ImageNet-1K)
 - Check-out more informations on original ImageNet website : [link](https://image-net.org/index.php)
 
 
