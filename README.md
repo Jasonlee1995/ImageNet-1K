@@ -38,6 +38,9 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
 ### 2.2. Files Explain
 
 - `ImageNet_class_index.json` : include class infos
+  - **Caution** : same label with different class num exists
+    - crane : 134, 517
+    - maillot : 638, 639
 - `ImageNet_val_label.txt` : include validation image label
 - `check.py` : check if unpacked right or not
 - `unpack.py` : make clean file trees of `ILSVRC2012_img_train.tar`, `ILSVRC2012_img_val.tar` for using as a dataset
