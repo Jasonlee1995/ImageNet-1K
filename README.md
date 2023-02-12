@@ -13,6 +13,9 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
 ## 2. Data Processing
 ### 2.1. About Data
 #### 2.1.1. ImageNet-1K Train Dataset
+
+- ImageNet-1K train dataset zip contains zips like below
+
 ```bash
 └── ILSVRC2012_img_train.tar
     ├── n01440764.tar
@@ -21,9 +24,12 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
     ├── ...
     └── n15075141.tar
 ```
-- ImageNet-1K train dataset zip contains zips like above
+
 
 ### 2.1.2. ImageNet-1K Val Dataset
+
+- ImageNet-1K val dataset zip contains images like below
+
 ```bash
 └── ILSVRC2012_img_val.tar
     ├── ILSVRV2012_val_00000001.JPEG
@@ -32,7 +38,7 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
     ├── ...
     └── ILSVRV2012_val_00050000.JPEG
 ```
-- ImageNet-1K val dataset zip contains images like above
+
 
 
 ### 2.2. Files Explain
@@ -47,6 +53,10 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
 
 
 ### 2.3. Run
+---
+
+1. Assume all the required files are in same directory like below (base_dir)
+
 ```bash
 └── base_dir
     ├── ILSVRC2012_img_train.tar
@@ -54,8 +64,14 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
     ├── ImageNet_class_index.json
     └── ImageNet_val_label.txt
 ```
-1. Assume all the required files are in same directory like above (base_dir)
-2. Change base_dir and target_dir in main code of `unpack.py`
+
+---
+
+2. From `unpack.py`, change `base_dir` and `target_dir` variables
+
+---
+
+3. Run `unpack.py` and it makes file trees in specific directory like below (target_dir)
 
 ```bash
 └── target_dir
@@ -76,8 +92,11 @@ This repo explains how to download & process ImageNet-1K train/val dataset for u
         ├── ...
         └── 999
 ```
-3. Run `unpack.py` and it makes file trees in specific directory like above (target_dir)
 
-![image](https://user-images.githubusercontent.com/49643709/163708613-da5fd5e3-2ab2-442a-8028-b9ef20ad7880.png)
+---
 
-4. Change ImageNet_dir in main code of `check.py` and run for double-check 
+4. From `check.py`, change `ImageNet_dir` variable and run for double-check 
+
+<img width="350" alt="image" src="https://user-images.githubusercontent.com/49643709/163708613-da5fd5e3-2ab2-442a-8028-b9ef20ad7880.png">
+
+---
